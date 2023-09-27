@@ -1,19 +1,17 @@
 <template>
   <div>
     <main-info></main-info>
+    <audio-player></audio-player>
     <calendar></calendar>
     <wedding-details></wedding-details>
     <gifts></gifts>
     <wedding-assistance-confirm></wedding-assistance-confirm>
-    <!-- <wedding-gallery></wedding-gallery>
-    <the-footer></the-footer> -->
   </div>
 </template>
 
 <script>
 import MainInfo from "../components/main_info.vue";
-// import WeddingGallery from "../components/wedding_gallery.vue";
-// import TheFooter from '../components/TheFooter.vue';
+import AudioPlayer from "../components/audio_player.vue";
 import Calendar from '../components/calendar.vue';
 import WeddingDetails from "../components/wedding_details.vue";
 import Gifts from "../components/gifts.vue";
@@ -26,6 +24,7 @@ export default {
     WeddingDetails,
     weddingAssistanceConfirm,
     Gifts,
+    AudioPlayer,
     // WeddingGallery,
     // TheFooter
   },
