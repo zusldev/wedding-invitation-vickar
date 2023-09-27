@@ -1,6 +1,6 @@
 <template>
   <div class="honeymoon-contribution">
-    <h2>¡SI QUIERES TENER UN DETALLE CON NOSOTROS!</h2>
+    <h2>¡REGALO!</h2>
     <p class="p-subt">Aunque lo que más valoramos es tu
       presencia, si quieres tener un detalle
       con nosotros, puedes hacernos una

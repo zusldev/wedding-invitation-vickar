@@ -156,6 +156,48 @@ export default {};
 
 }
 
+/* Estilos para los nombres */
+
+.names p span {
+	background-size: 50px 50px;
+	background-color: #c16;
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	-webkit-background-clip: text;
+
+	/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 10s linear infinite;
+
+	/* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@keyframes aitf {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+/* Estilos para los nombres */
+
+
 .names-bride {
 	margin-left: 150px;
 }
@@ -227,8 +269,9 @@ img {
 @media (max-width: 767px) {
 
 	#padres {
-		font-size: 4rem;
+		font-size: 2.8rem;
 		line-height: 1;
+		text-wrap: nowrap;
 	}
 
 	.main-greeting-title {
@@ -247,8 +290,8 @@ img {
 		/* Cambia la altura para que la imagen se ajuste de manera proporcional */
 	}
 
-	.names {
-		font-size: 6rem;
+	.names p span {
+		font-size: 5rem;
 		/* Ajusta el tamaño del texto de los nombres para dispositivos móviles */
 	}
 

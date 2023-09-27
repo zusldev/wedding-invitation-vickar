@@ -1,7 +1,8 @@
 <template>
   <div class="details-container">
     <div class="details-item">
-      <div class="details-title">DETALLES</div>
+      <div class="details-main-title">DETALLES</div>
+      <div class="details-title">NO NIÑOS</div>
       <div class="details-text">
         AUNQUE NOS GUSTAN LOS NIÑOS,<br />
         ESTA SERÁ UNA CELEBRACIÓN<br />
@@ -19,10 +20,11 @@
         PARROQUIA DE NUESTRA SEÑORA<br />
         DEL PERPETUO SOCORRO<br />
         AGUA PRIETA #402, COL. SONORA<br />
-        6:00PM
       </div>
+      <p class="hour">6:00 PM</p>
       <div class="img-container">
         <img src="@/assets/images/church.png" alt="Iglesia" />
+
       </div>
       <div class="map">
         <iframe
@@ -51,7 +53,7 @@
 
     <div class="details-item">
       <div class="details-title">NUESTRO PRIMER BAILE DE NOVIOS</div>
-      <div class="details-text">
+      <div class="hour">
         9:30 PM
       </div>
       <div class="wedding-dance">
@@ -63,6 +65,25 @@
 </template>
 
 <style scoped>
+.hour {
+  font-size: 2.1rem;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.2rem;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.details-main-title {
+  font-size: 6rem;
+  color: #ffff;
+  margin-bottom: 1rem;
+  letter-spacing: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 .map {
   margin-top: 50px;
 }
@@ -93,6 +114,11 @@
   height: 900px;
   display: block;
   transition: transform 0.5s ease-in-out;
+  border-radius: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: center;
+
 }
 
 .details-container {
@@ -129,7 +155,7 @@
 
 @media (max-width: 767px) {
   .details-title {
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 5px;
   }
 
@@ -143,8 +169,22 @@
   #map {
     margin: 0 auto;
     padding: 0;
-    max-width: 370px;
+    max-width: 300px;
     max-height: 300px;
+  }
+
+  .details-main-title {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .img-container img {
+    width: 185px;
+    height: 185px;
   }
 }
 </style>
