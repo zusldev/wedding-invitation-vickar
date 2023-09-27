@@ -1,5 +1,5 @@
 <template>
-  <div class="audio-player" :class="{ playing: isPlaying }" v-if="showPlayer">
+  <div class="audio-player" :class="{ playing: isPlaying }">
     <!-- Controles de reproducción de audio -->
     <button class="audio-button" @click="togglePlayback">
       <span class="icon" v-if="isPlaying">
@@ -20,7 +20,7 @@ export default {
     return {
       isPlaying: false,
       showPlayer: false,
-      audioSrc: ('src/audio/dragonballgt-piano-weddingsong.mp3'),
+      audioSrc: ('/dragonballgt-piano-weddingsong.mp3'),
       isAudioLoaded: false,
     };
   },
