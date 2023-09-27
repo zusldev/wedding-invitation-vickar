@@ -1,0 +1,37 @@
+html {
+    font-size: 0.8rem;
+    font-family: "Gowun Dodum", sans-serif;
+    background-color: #111111;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(92, 92, 92);
+}
+
+li {
+    list-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "The Seasons";
+    src: url("../assets/fonts/Fontspring-DEMO-theseasons-reg.woff") format("woff");
+
+}
+
+@font-face {
+    font-family: "The Seasons Bold";
+    src: url("../assets/fonts/Fontspring-DEMO-theseasons-bd.woff") format("woff");
+}
+
