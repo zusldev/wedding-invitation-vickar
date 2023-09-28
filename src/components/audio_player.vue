@@ -10,7 +10,7 @@
       </span>
     </button>
     <!-- Elemento de audio -->
-    <audio ref="audioElement" :src="audioSrc" @canplay="audioLoaded" @ended="audioEnded"></audio>
+    <audio ref="audioElement" :src="audioSrc" preload="auto" @canplay="audioLoaded" @ended="audioEnded"></audio>
   </div>
 </template>
 
@@ -59,6 +59,9 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
     // Reproduce la canción automáticamente al cargar el componente
     this.playAudio();
+    this.$refs.audioElement.addEventListener('loadedmetadata', () => {
+      this.isAudioLoaded = true;
+    });
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll);
