@@ -19,7 +19,7 @@
         <div>
           <p>CONFIRMAR CON EL NOVIO</p>
         </div>
-        <div class="button" @click="sendMessageGuest">
+        <div class="button" @click="sendMessageRSVP">
           <img src="../assets/images/whatsapp-svgrepo-com.svg" alt="">
         </div>
       </div>
