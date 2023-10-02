@@ -1,15 +1,15 @@
 <template>
   <div class="whatsapp-buttons">
-    <p class="introduction">
+    <!-- <p class="introduction">
       ¡SERÁ UN PLACER CONTAR CON TU PRESENCIA EN NUESTRA BODA!
-    </p>
+    </p> -->
     <p class="introduction-subt">
       POR FAVOR, CONFIRMA TU ASISTENCIA CON LA NOVIA O EL NOVIO.
     </p>
     <div class="button-container">
       <div class="novia-container">
         <div>
-          <p>CONFIRMAR ASISTENCIA CON LA NOVIA</p>
+          <p>CONFIRMAR CON LA NOVIA</p>
         </div>
         <div class="button" @click="sendMessageGuest">
           <img src="../assets/images/whatsapp-svgrepo-com.svg" alt="">
@@ -17,13 +17,16 @@
       </div>
       <div class="novia-container">
         <div>
-          <p>CONFIRMAR ASISTENCIA CON EL NOVIO</p>
+          <p>CONFIRMAR CON EL NOVIO</p>
         </div>
         <div class="button" @click="sendMessageGuest">
           <img src="../assets/images/whatsapp-svgrepo-com.svg" alt="">
         </div>
       </div>
     </div>
+    <p class="introduction">
+      ¡SERÁ UN PLACER CONTAR CON TU PRESENCIA EN NUESTRA BODA!
+    </p>
     <div class="divide-line"></div>
   </div>
 </template>
@@ -32,7 +35,7 @@
 export default {
   methods: {
     sendMessageGuest() {
-      const phoneNumber = '526421510254'; // Reemplaza con el número de WhatsApp de la novia
+      const phoneNumber = '526421185155'; // Reemplaza con el número de WhatsApp de la novia
       const message = '¡Hola! Estoy emocionado/a por la boda. Confirmo mi asistencia contigo. Nos vemos pronto.'; // Personaliza el mensaje
       const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
       window.open(whatsappURL, '_blank');
@@ -58,16 +61,27 @@ export default {
     margin: 0 auto;
     padding: 0;
   }
-  .introduction{
+
+  .introduction {
     font-size: 1.7rem;
     padding: 5px;
+    
   }
-  .introduction-subt{
+
+  .introduction-subt {
     font-size: 1.2rem;
     padding: 5px;
     margin: 4px 4px 4px 4px;
     margin-bottom: 40px;
   }
+
+  .novia-container div p {
+    font-size: 1.4rem;
+    padding: 5px;
+    margin-bottom: 20px;
+    letter-spacing: 0.3rem;
+  }
+
 }
 
 .button {
@@ -118,7 +132,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   place-items: center;
   place-content: center;
 }
@@ -136,7 +150,6 @@ export default {
 .whatsapp-buttons {
   max-width: 768px;
   width: 100%;
-  margin: 0 auto;
   padding: 0;
 }
 
@@ -148,14 +161,16 @@ export default {
   letter-spacing: 0.7rem;
   color: #B4D2ACFF;
   font-weight: bold;
+  margin-top: 60px;
 }
 
 .introduction-subt {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
-  margin: 0 auto;
+  margin: 4px 4px 4px 4px;
   padding-bottom: 2rem;
   letter-spacing: 0.3rem;
   color: #ffff;
   font-weight: bold;
-}</style>
+}
+</style>

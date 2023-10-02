@@ -61,7 +61,7 @@ export default {
     this.playAudio();
     this.$refs.audioElement.addEventListener('loadedmetadata', () => {
       this.isAudioLoaded = true;
-    });
+    }); 
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll);

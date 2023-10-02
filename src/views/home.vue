@@ -6,6 +6,7 @@
     <wedding-details></wedding-details>
     <gifts></gifts>
     <wedding-assistance-confirm></wedding-assistance-confirm>
+    <wedding-gallery></wedding-gallery>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Calendar from '../components/calendar.vue';
 import WeddingDetails from "../components/wedding_details.vue";
 import Gifts from "../components/gifts.vue";
 import weddingAssistanceConfirm from "../components/wedding_assistance_confirm.vue";
+import WeddingGallery from "../components/wedding_gallery.vue";
 
 export default {
   components: {
@@ -25,8 +27,7 @@ export default {
     weddingAssistanceConfirm,
     Gifts,
     AudioPlayer,
-    // WeddingGallery,
-    // TheFooter
+    WeddingGallery,
   },
 };
 </script>
