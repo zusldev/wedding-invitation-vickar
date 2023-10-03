@@ -11,30 +11,50 @@
 
 <script>
 import VueGallery from 'vue-gallery';
+import img1 from '../assets/images/gallery/img1-min.jpg';
+import img2 from '../assets/images/gallery/img2-min.jpg';
+import img3 from '../assets/images/gallery/img3-min.jpg';
+import img4 from '../assets/images/gallery/img4-min.jpg';
+import img5 from '../assets/images/gallery/img5-min.jpg';
+import img6 from '../assets/images/gallery/img6-min.jpg';
+import img7 from '../assets/images/gallery/img7-min.jpg';
+import img8 from '../assets/images/gallery/img8-min.jpg';
+import img9 from '../assets/images/gallery/img9-min.jpg';
+import img10 from '../assets/images/gallery/img10-min.jpg';
+import img11 from '../assets/images/gallery/img11-min.jpg';
+import img12 from '../assets/images/gallery/img12-min.jpg';
+import img13 from '../assets/images/gallery/img13-min.jpg';
+import img14 from '../assets/images/gallery/img14-min.jpg';
+import img15 from '../assets/images/gallery/img15-min.jpg';
+import img16 from '../assets/images/gallery/img16-min.jpg';
+import img17 from '../assets/images/gallery/img17-min.jpg';
+import img18 from '../assets/images/gallery/img18-min.jpg';
+import img19 from '../assets/images/gallery/img19-min.jpg';
+
 
 export default {
   data: function () {
     return {
       images: [
-        'https://ik.imagekit.io/uvhv6hndt/img12.jpg?updatedAt=1696226705801',
-        'https://ik.imagekit.io/uvhv6hndt/img5.jpg?updatedAt=1696226739091',
-        'https://ik.imagekit.io/uvhv6hndt/img1.jpg?updatedAt=1696226737823',
-        'https://ik.imagekit.io/uvhv6hndt/img4.jpg?updatedAt=1696226737009',
-        'https://ik.imagekit.io/uvhv6hndt/img2.jpg?updatedAt=1696226736853',
-        'https://ik.imagekit.io/uvhv6hndt/img3.jpg?updatedAt=1696226734798',
-        'https://ik.imagekit.io/uvhv6hndt/img18.jpg?updatedAt=1696226729651',
-        'https://ik.imagekit.io/uvhv6hndt/img19.jpg?updatedAt=1696226729414',
-        'https://ik.imagekit.io/uvhv6hndt/img8.jpg?updatedAt=1696226729591',
-        'https://ik.imagekit.io/uvhv6hndt/img13.jpg?updatedAt=1696226721524',
-        'https://ik.imagekit.io/uvhv6hndt/img16.jpg?updatedAt=1696226721464',
-        'https://ik.imagekit.io/uvhv6hndt/img15.jpg?updatedAt=1696226715988',
-        'https://ik.imagekit.io/uvhv6hndt/img7.jpg?updatedAt=1696226715454',
-        'https://ik.imagekit.io/uvhv6hndt/img14.jpg?updatedAt=1696226715392',
-        'https://ik.imagekit.io/uvhv6hndt/img6.jpg?updatedAt=1696226714737',
-        'https://ik.imagekit.io/uvhv6hndt/img9.jpg?updatedAt=1696226711991',
-        'https://ik.imagekit.io/uvhv6hndt/img12.jpg?updatedAt=1696226705801',
-        'https://ik.imagekit.io/uvhv6hndt/img10.jpg?updatedAt=1696226705482',
-        'https://ik.imagekit.io/uvhv6hndt/img11.jpg?updatedAt=1696226697121'
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6,
+        img7,
+        img8,
+        img9,
+        img10,
+        img11,
+        img12,
+        img13,
+        img14,
+        img15,
+        img16,
+        img17,
+        img18,
+        img19,
       ],
       index: null
     };
@@ -47,7 +67,7 @@ export default {
 </script> 
 
 <style scoped>
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -55,6 +75,7 @@ export default {
   width: 100%;
   margin: 0 auto;
 }
+
 .image {
   float: left;
   background-size: cover;

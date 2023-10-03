@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="main-picture">
 			<div>
-				<img class="image" src="@/assets/images/wedding-portrait.jpg" alt="Imagen principal" />
+				<img class="image" src="@/assets/images/wedding-portrait.webp" alt="Imagen principal" />
 				<div class="logo">
 					<img src="@/assets/images/vandk-removebg-preview.png" alt="Logo" />
 				</div>
@@ -37,7 +37,7 @@
 		</div>
 
 		<div class="">
-			<img class="second-image" id="sec-img" src="@/assets/images/2.jpg" />
+			<img class="second-image" id="sec-img" src="@/assets/images/2.webp" />
 		</div>
 
 		<div class="divide-line"></div>
@@ -56,7 +56,7 @@ export default {};
 	display: block;
 	border-radius: 50%;
 	transition: transform 0.5s ease-in-out;
-	
+
 }
 
 #padres {

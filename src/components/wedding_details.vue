@@ -58,7 +58,7 @@
         9:30 PM
       </div>
       <div class="wedding-dance">
-        <img id="sec-img" src="@/assets/images/3.jpg" alt="wedding ring" />
+        <img id="sec-img" src="@/assets/images/3.webp" alt="wedding ring" />
       </div>
     </div>
     <div class="divide-line"></div>
