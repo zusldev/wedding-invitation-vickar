@@ -1,7 +1,8 @@
 <template>
   <div class="details-container">
     <div class="details-item">
-      <div class="details-title">DETALLES</div>
+      <div class="details-main-title">DETALLES</div>
+      <div class="details-title">NO NIÑOS</div>
       <div class="details-text">
         AUNQUE NOS GUSTAN LOS NIÑOS,<br />
         ESTA SERÁ UNA CELEBRACIÓN<br />
@@ -15,24 +16,26 @@
     </div>
     <div class="details-item">
       <div class="details-title">CEREMONIA RELIGIOSA</div>
+      <p class="hour">6:00 PM</p>
       <div class="details-text">
         PARROQUIA DE NUESTRA SEÑORA<br />
         DEL PERPETUO SOCORRO<br />
         AGUA PRIETA #402, COL. SONORA<br />
-        6:00PM
       </div>
       <div class="img-container">
         <img src="@/assets/images/church.png" alt="Iglesia" />
+
       </div>
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.732591307377!2d-109.4331615238667!3d27.070187476553702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86b81b034b5fb245%3A0x9b382b56838b8d9d!2sParroquia%20de%20Nuestra%20Se%C3%B1ora%20del%20Perpetuo%20Socorro!5e0!3m2!1ses-419!2smx!4v1695796568270!5m2!1ses-419!2smx"
-          width="760" height="450" style="border: 1px transparent; border-radius: 10px; margin-bottom: 50px"
+          width="760" height="450" style="border: 1px transparent; border-radius: 10px; margin-bottom: 0px"
           allowfullscreen="" loading="lazy" id="map" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     <div class="details-item">
       <div class="details-title">RECEPCIÓN</div>
+      <p class="hour">9:00 PM</p>
       <div class="details-text">
         SALÓN MONTECARLO<br />
         CALLE GRAL. OTERO NTE. 105,<br />
@@ -51,11 +54,11 @@
 
     <div class="details-item">
       <div class="details-title">NUESTRO PRIMER BAILE DE NOVIOS</div>
-      <div class="details-text">
+      <div class="hour">
         9:30 PM
       </div>
       <div class="wedding-dance">
-        <img src="@/assets/images/wedding-portrait.jpg" alt="wedding ring" />
+        <img id="sec-img" src="@/assets/images/3.webp" alt="wedding ring" />
       </div>
     </div>
     <div class="divide-line"></div>
@@ -63,6 +66,35 @@
 </template>
 
 <style scoped>
+#sec-img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  display: block;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.hour {
+  font-size: 2.1rem;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.2rem;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.details-main-title {
+  font-size: 6rem;
+  color: #ffff;
+  margin-bottom: 1rem;
+  letter-spacing: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 .map {
   margin-top: 50px;
 }
@@ -75,8 +107,8 @@
 }
 
 .img-container img {
-  width: 205px;
-  height: 205px;
+  width: 105px;
+  height: 105px;
   margin: 0 auto;
   margin-top: 50px;
   padding: 0;
@@ -93,6 +125,11 @@
   height: 900px;
   display: block;
   transition: transform 0.5s ease-in-out;
+  border-radius: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: center;
+
 }
 
 .details-container {
@@ -129,22 +166,38 @@
 
 @media (max-width: 767px) {
   .details-title {
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 5px;
   }
 
   .details-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 5px;
     margin: 4px 4px 4px 4px;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-wrap: nowrap;
   }
 
   #map {
     margin: 0 auto;
     padding: 0;
-    max-width: 370px;
-    max-height: 300px;
+    max-width: 330px;
+    max-height: 150px;
+  }
+
+  .details-main-title {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .img-container img {
+    width: 90px;
+    height: 90px;
   }
 }
 </style>

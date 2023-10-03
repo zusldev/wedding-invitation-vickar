@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="main-picture">
 			<div>
-				<img class="image" src="@/assets/images/wedding-portrait.jpg" alt="Imagen principal" />
+				<img class="image" src="@/assets/images/wedding-portrait.webp" alt="Imagen principal" />
 				<div class="logo">
 					<img src="@/assets/images/vandk-removebg-preview.png" alt="Logo" />
 				</div>
@@ -37,7 +37,7 @@
 		</div>
 
 		<div class="">
-			<img class="image" id="sec-img" src="@/assets/images/wedding-portrait.jpg" />
+			<img class="second-image" id="sec-img" src="@/assets/images/2.webp" />
 		</div>
 
 		<div class="divide-line"></div>
@@ -52,10 +52,11 @@ export default {};
 #sec-img {
 	width: 100%;
 	object-fit: cover;
-	height: 900px;
+	height: 500px;
 	display: block;
+	border-radius: 50%;
 	transition: transform 0.5s ease-in-out;
-	border-radius: 900px;
+
 }
 
 #padres {
@@ -156,6 +157,55 @@ export default {};
 
 }
 
+/* Estilos para los nombres */
+
+.names p span {
+	background-size: 50px 50px;
+	background-color: #b4d2ac;
+	/* Cambiado a un tono similar a #B4D2ACFF */
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	-webkit-background-clip: text;
+	background-clip: text;
+
+	/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 10s linear infinite;
+	animation: aitf 10s linear infinite;
+
+	/* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+/* Animate Background Image */
+
+@keyframes aitf {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+/* Estilos para los nombres */
+
+
 .names-bride {
 	margin-left: 150px;
 }
@@ -227,18 +277,22 @@ img {
 @media (max-width: 767px) {
 
 	#padres {
-		font-size: 4rem;
-		line-height: 1;
+		font-size: 2.8rem;
+		line-height: 0.4;
+		text-wrap: nowrap;
+		padding-bottom: 5rem;
 	}
 
 	.main-greeting-title {
 		font-size: 1.7rem;
 		padding-bottom: 1rem;
+		letter-spacing: 0.2rem;
 	}
 
 	.main-greeting-text {
-		font-size: 1.2rem;
+		font-size: 1.0rem;
 		padding-bottom: 1rem;
+		letter-spacing: 0.5rem;
 	}
 
 	.image {
@@ -247,8 +301,8 @@ img {
 		/* Cambia la altura para que la imagen se ajuste de manera proporcional */
 	}
 
-	.names {
-		font-size: 6rem;
+	.names p span {
+		font-size: 5rem;
 		/* Ajusta el tamaño del texto de los nombres para dispositivos móviles */
 	}
 
@@ -274,7 +328,7 @@ img {
 
 	.logo {
 		scale: 0.8;
-		left: 20px;
+		left: 140px;
 	}
 
 	/* Agrega cualquier otro ajuste necesario para dispositivos móviles aquí */

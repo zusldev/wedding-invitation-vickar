@@ -24,14 +24,3 @@ button:hover {
     cursor: pointer;
 }
 
-@font-face {
-    font-family: "The Seasons";
-    src: url("../assets/fonts/Fontspring-DEMO-theseasons-reg.woff") format("woff");
-
-}
-
-@font-face {
-    font-family: "The Seasons Bold";
-    src: url("../assets/fonts/Fontspring-DEMO-theseasons-bd.woff") format("woff");
-}
-

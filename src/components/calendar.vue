@@ -22,14 +22,14 @@
 				<span class="countdown-label">Segundos</span>
 			</div>
 		</div>
-		<div class="divide-line"></div>
+		<!-- <div class="divide-line"></div> -->
 
-		<div class="day-row">
+		<!-- <div class="day-row">
 			<div v-for="(day, index) in days" :key="index" :class="day.style">
 				{{ day.name }}
 			</div>
-		</div>
-		<div class="date-column">
+		</div> -->
+		<!-- <div class="date-column">
 			<div class="week1">
 				<div v-for="(week, index) in week1" :key="index" :class="week.style" :id="week.id">
 					{{ week.date }}
@@ -41,26 +41,26 @@
 					</div>
 				</div>
 			</div>
-			<!-- 1ra semana -->
-			<div class="week2">
+			 1ra semana -->
+		<!-- <div class="week2">
 				<div v-for="(week, index) in week2" :key="index" :class="week.style">
 					{{ week.date }}
 				</div>
-			</div>
-			<div class="week3">
+			</div> -->
+		<!-- <div class="week3">
 				<div v-for="(week, index) in week3" :key="index" :class="week.style">
 					{{ week.date }}
 					<div v-if="week.date == 14">
 						<div id="bar-wedding"></div>
 					</div>
 				</div>
-			</div>
-			<div class="week4">
+			</div> -->
+		<!-- <div class="week4">
 				<div v-for="(week, index) in week4" :key="index" :class="week.style">
 					{{ week.date }}
 				</div>
-			</div>
-			<div class="week5">
+			</div> -->
+		<!-- <div class="week5">
 				<div v-for="(week, index) in week5" :key="index" :class="week.style">
 					{{ week.date }}
 				</div>
@@ -69,10 +69,9 @@
 				<div v-for="(week, index) in week6" :key="index" :class="week.style">
 					{{ week.date }}
 				</div>
-			</div>
-		</div>
-		<div class="divide-line"></div>
+			</div> -->
 	</div>
+	<div class="divide-line"></div>
 </template>
 
 <script>

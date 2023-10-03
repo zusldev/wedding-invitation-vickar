@@ -1,19 +1,14 @@
 <template>
   <div class="honeymoon-contribution">
-    <h2>¡SI QUIERES TENER UN DETALLE CON NOSOTROS!</h2>
+    <h2>¡REGALO!</h2>
     <p class="p-subt">Aunque lo que más valoramos es tu
       presencia, si quieres tener un detalle
-      con nosotros, puedes hacernos una
-      transferencia a la siguiente cuenta
-      bancaria. O de otro modo un aporte en
-      efectivo el día de la boda.
+      con nosotros, puedes hacer un aporte en efectivo el dia de nuestra boda.</p>
 
-      ¡Muchas gracias!
 
-    </p>
 
     <!-- Información de la cuenta bancaria -->
-    <div class="bank-info">
+    <!-- <div class="bank-info">
       <div class="bank-icon">
         <img src="@/assets/images/bbva-2019.svg" alt="BBVA Icon">
       </div>
@@ -26,17 +21,15 @@
           <p class="details-bank">Victor Ramirez</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="amazon-text">
-      <p class="p-subt">También puedes tener un detalle con
-        nosotros comprando algo de nuestra
-        lista de regalos en Amazon.</p>
+      <p class="p-subt">También tenemos nuestra mesa de regalos, visita nuestra lista de regalos en Amazon. Sus regalos serán recibidos con gratitud y amor. </p>
     </div>
     <!-- Botón para ver la lista de compras en Amazon -->
-    <a href="https://www.amazon.com.mx/hz/wishlist/ls/1388ANAKFYUQ2?ref_=wl_share" target="_blank" class="amazon-button">
+    <a href="https://www.amazon.com.mx/hz/wishlist/ls/1NRVKVE59RF0V?ref_=wl_share" target="_blank" class="amazon-button">
       <img src="@/assets/images/amazon-2.svg" alt="Amazon Icon">
-      <span class="amazon-details">Ver lista de compras en amazon</span>
+      <span class="amazon-details">Ver lista</span>
     </a>
 
     <div class="divide-line"></div>
