@@ -37,7 +37,7 @@
 		</div>
 
 		<div class="">
-			<img class="second-image" id="sec-img" src="@/assets/images/2.webp" />
+			<img class="second-image" id="sec-img" src="https://ik.imagekit.io/uvhv6hndt/2.webp?updatedAt=1696295146984" />
 		</div>
 
 		<div class="divide-line"></div>

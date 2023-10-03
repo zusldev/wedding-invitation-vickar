@@ -11,50 +11,30 @@
 
 <script>
 import VueGallery from 'vue-gallery';
-import img1 from '../assets/images/gallery/img1-min.jpg';
-import img2 from '../assets/images/gallery/img2-min.jpg';
-import img3 from '../assets/images/gallery/img3-min.jpg';
-import img4 from '../assets/images/gallery/img4-min.jpg';
-import img5 from '../assets/images/gallery/img5-min.jpg';
-import img6 from '../assets/images/gallery/img6-min.jpg';
-import img7 from '../assets/images/gallery/img7-min.jpg';
-import img8 from '../assets/images/gallery/img8-min.jpg';
-import img9 from '../assets/images/gallery/img9-min.jpg';
-import img10 from '../assets/images/gallery/img10-min.jpg';
-import img11 from '../assets/images/gallery/img11-min.jpg';
-import img12 from '../assets/images/gallery/img12-min.jpg';
-import img13 from '../assets/images/gallery/img13-min.jpg';
-import img14 from '../assets/images/gallery/img14-min.jpg';
-import img15 from '../assets/images/gallery/img15-min.jpg';
-import img16 from '../assets/images/gallery/img16-min.jpg';
-import img17 from '../assets/images/gallery/img17-min.jpg';
-import img18 from '../assets/images/gallery/img18-min.jpg';
-import img19 from '../assets/images/gallery/img19-min.jpg';
-
 
 export default {
   data: function () {
     return {
       images: [
-        img1,
-        img2,
-        img3,
-        img4,
-        img5,
-        img6,
-        img7,
-        img8,
-        img9,
-        img10,
-        img11,
-        img12,
-        img13,
-        img14,
-        img15,
-        img16,
-        img17,
-        img18,
-        img19,
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img17-min.jpg?updatedAt=1696294561832',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img1-min.jpg?updatedAt=1696294560444',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img19-min.jpg?updatedAt=1696294559068',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img18-min.jpg?updatedAt=1696294558293',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img16-min.jpg?updatedAt=1696294558220',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img14-min.jpg?updatedAt=1696294558168',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img15-min.jpg?updatedAt=1696294557527',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img13-min.jpg?updatedAt=1696294557316',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img4-min.jpg?updatedAt=1696294557787',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img8-min.jpg?updatedAt=1696294557805',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img11-min.jpg?updatedAt=1696294557770',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img12-min.jpg?updatedAt=1696294556421',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img5-min.jpg?updatedAt=1696294555658',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img2-min.jpg?updatedAt=1696294555536',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img6-min.jpg?updatedAt=1696294554697',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img9-min.jpg?updatedAt=1696294554457',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img7-min.jpg?updatedAt=1696294554503',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img3-min.jpg?updatedAt=1696294554497',
+        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img10-min.jpg?updatedAt=1696294554154'
       ],
       index: null
     };
