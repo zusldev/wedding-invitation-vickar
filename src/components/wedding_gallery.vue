@@ -11,30 +11,50 @@
 
 <script>
 import VueGallery from 'vue-gallery';
+import img1 from '../assets/gallery/img1.webp';
+import img2 from '../assets/gallery/img2.webp';
+import img3 from '../assets/gallery/img3.webp';
+import img4 from '../assets/gallery/img4.webp';
+import img5 from '../assets/gallery/img5.webp';
+import img6 from '../assets/gallery/img6.webp';
+import img7 from '../assets/gallery/img7.webp';
+import img8 from '../assets/gallery/img8.webp';
+import img9 from '../assets/gallery/img9.webp';
+import img10 from '../assets/gallery/img10.webp';
+import img11 from '../assets/gallery/img11.webp';
+import img12 from '../assets/gallery/img12.webp';
+import img13 from '../assets/gallery/img13.webp';
+import img14 from '../assets/gallery/img14.webp';
+import img15 from '../assets/gallery/img15.webp';
+import img16 from '../assets/gallery/img16.webp';
+import img17 from '../assets/gallery/img17.webp';
+import img18 from '../assets/gallery/img18.webp';
+import img19 from '../assets/gallery/img19.webp';
+
 
 export default {
   data: function () {
     return {
       images: [
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img17-min.jpg?updatedAt=1696294561832',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img1-min.jpg?updatedAt=1696294560444',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img19-min.jpg?updatedAt=1696294559068',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img18-min.jpg?updatedAt=1696294558293',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img16-min.jpg?updatedAt=1696294558220',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img14-min.jpg?updatedAt=1696294558168',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img15-min.jpg?updatedAt=1696294557527',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img13-min.jpg?updatedAt=1696294557316',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img4-min.jpg?updatedAt=1696294557787',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img8-min.jpg?updatedAt=1696294557805',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img11-min.jpg?updatedAt=1696294557770',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img12-min.jpg?updatedAt=1696294556421',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img5-min.jpg?updatedAt=1696294555658',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img2-min.jpg?updatedAt=1696294555536',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img6-min.jpg?updatedAt=1696294554697',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img9-min.jpg?updatedAt=1696294554457',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img7-min.jpg?updatedAt=1696294554503',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img3-min.jpg?updatedAt=1696294554497',
-        'https://ik.imagekit.io/uvhv6hndt/GALLERY/img10-min.jpg?updatedAt=1696294554154'
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6,
+        img7,
+        img8,
+        img9,
+        img10,
+        img11,
+        img12,
+        img13,
+        img14,
+        img15,
+        img16,
+        img17,
+        img18,
+        img19,
       ],
       index: null
     };
